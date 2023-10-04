@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 12px;
+    border: 2px solid rgb(38, 94, 216);
+    background-color: rgb(120, 151, 172);
+    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.input {
+    padding: 8px 12px;
+    font: inherit;
+    cursor: pointer;
+    border-color: rgb(38, 94, 216);
+    margin-bottom: 8px;
+}
+
+.button {
+    margin-top: 16px;
+    padding: 8px 12px;
+    font: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    border-color: rgb(38, 94, 216);
+    font-weight: 500;
+    color: rgb(5, 54, 160);
+}
+
+.label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+}

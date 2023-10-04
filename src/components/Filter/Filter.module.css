@@ -1,0 +1,27 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 12px;
+    border: 2px solid rgb(38, 94, 216);
+    background-color: rgb(120, 151, 172);
+    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filt_inp {
+    width: 476px;
+    margin: 0 auto;
+    padding: 8px 12px;
+    font: inherit;
+    cursor: pointer;
+    border-color: rgb(38, 94, 216);
+}
+
+.filt_lable {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}

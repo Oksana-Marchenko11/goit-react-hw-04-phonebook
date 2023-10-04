@@ -1,0 +1,49 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(171, 192, 205);
+    width: 524px;
+    margin-bottom: 24px;
+}
+
+tbody>tr>td {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: rgb(120, 151, 172);
+
+    background: white;
+    color: rgb(38, 94, 216);
+    padding: 10px 20px;
+}
+
+thead {
+    /* border-color: rgb(120, 151, 172); */
+    background: rgb(120, 151, 172);
+    color: white;
+}
+
+.delete_btn {
+    background-color: rgb(120, 151, 172);
+    border: none;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.delete_btn:hover {
+    background-color: rgb(38, 94, 216);
+}
+
+.contacts_text {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
