@@ -4,11 +4,13 @@ import { nanoid } from 'nanoid';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactsList/ContactList';
 import { Filter } from './Filter/Filter';
-import contactsList from '../data/contacts.json';
+// import contactsList from '../data/contacts.json';
 import css from './App.module.css';
 
 export const App = () => {
-  const [contacts, setContacts] = useState(contactsList);
+  const [contacts, setContacts] = useState(
+    JSON.parse(window.localStorage.getItem('contacts'))
+  );
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
@@ -63,7 +65,9 @@ export const App = () => {
       {contacts.length ? (
         <Filter value={filter} onFilter={filterList} />
       ) : (
-        <p>Your phonebook is empty. Add first contact!</p>
+        <p className={css.empty}>
+          Your phonebook is empty! Please add first contact!
+        </p>
       )}
       {filteredContacts.length ? (
         <ContactList
@@ -71,7 +75,7 @@ export const App = () => {
           onDeleteContact={deleteContact}
         />
       ) : (
-        <p>No contacts to show! Check filter</p>
+        <p className={css.empty}>No contacts to show! Please check filter!</p>
       )}
     </div>
   );
